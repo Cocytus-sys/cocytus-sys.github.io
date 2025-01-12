@@ -1,6 +1,6 @@
 /* 全局背景图片 */
 #web_bg {
-  background-size: 800px 600px; /* 完全覆盖 */
+  background-size: 1600px 900px; /* 宽高 */
   background-position: center; /* 居中 */
 }
 /* 首页文章卡片 */
