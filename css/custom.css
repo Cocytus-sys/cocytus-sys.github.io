@@ -1,3 +1,9 @@
+/* 全局背景图片 */
+#web_bg {
+  background-size: cover; /* 完全覆盖 */
+  background-position: center; /* 居中 */
+  background-repeat: no-repeat; /* 不重复 */
+}
 /* 首页文章卡片 */
 #recent-posts > .recent-post-item{
   background:rgba(255, 255, 255, 0.8);
