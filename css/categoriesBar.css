@@ -1,40 +1,48 @@
 #categoryBar {
   width: 100% !important;
 }
+
 ul.categoryBar-list {
   margin: 5px 5px 0 5px !important;
   padding: 0 !important;
 }
+
 li.categoryBar-list-item {
   font-weight: bold;
   display: inline-block;
   height: 180px !important;
   margin: 5px 0.5% 0 0.5% !important;
-  background-image: linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
+  background-image: linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%), var(--bg-image); /* 添加背景图 */
+  background-size: cover !important; /* 确保背景图全覆盖 */
+  background-position: center !important; /* 背景图居中 */
+  background-repeat: no-repeat !important; /* 防止背景图重复 */
   border-radius: 10px;
   padding: 25px 0 25px 25px !important;
   box-shadow: rgba(50,50,50,0.3) 50px 50px 50px 50px inset;
   overflow: hidden;
-  background-size: 100% !important;
-  background-position: center !important;
 }
+
 li.categoryBar-list-item:hover {
-  background-size: 110% !important;
+  background-size: 110% !important; /* 鼠标悬停时放大背景图 */
   box-shadow: inset 500px 50px 50px 50px rgba(50,50,50,0.6);
 }
+
 li.categoryBar-list-item:hover span.categoryBar-list-descr {
   transition: all 0.5s;
   transform: translate(-100%, 0);
 }
+
 a.categoryBar-list-link {
   color: #fff !important;
   font-size: 20px !important;
 }
+
 a.categoryBar-list-link::before {
   content: '' !important;
   color: #fff !important;
   font-size: 20px !important;
 }
+
 a.categoryBar-list-link:after {
   content: '';
   position: relative;
@@ -45,16 +53,19 @@ a.categoryBar-list-link:after {
   border-radius: 3px;
   background-color: #fff;
 }
+
 a.categoryBar-list-link:hover:after {
   width: 90%;
   left: 1%;
   transition: all 0.5s;
 }
+
 span.categoryBar-list-count {
   display: block !important;
   color: #fff !important;
   font-size: 20px !important;
 }
+
 span.categoryBar-list-count::before {
   content: '\f02d' !important;
   padding-right: 15px !important;
@@ -66,6 +77,7 @@ span.categoryBar-list-count::before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
+
 span.categoryBar-list-descr {
   padding: 5px;
   display: block !important;
@@ -74,6 +86,7 @@ span.categoryBar-list-descr {
   position: relative;
   right: -100%;
 }
+
 @media screen and (max-width: 650px) {
   li.categoryBar-list-item {
     width: 48% !important;
