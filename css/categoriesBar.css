@@ -33,14 +33,14 @@ li.categoryBar-list-item:hover span.categoryBar-list-descr {
 }
 
 a.categoryBar-list-link {
-  color: #fff !important;
-  font-size: 20px !important;
+  color: #fff !important; /* 分类名颜色改为白色 */
+  font-size: 40px !important; /* 增大分类名字体大小 */
 }
 
 a.categoryBar-list-link::before {
   content: '' !important;
-  color: #fff !important;
-  font-size: 20px !important;
+  color: #fff !important; /* 分类名颜色改为白色 */
+  font-size: 40px !important; /* 增大分类名字体大小 */
 }
 
 a.categoryBar-list-link:after {
@@ -62,8 +62,8 @@ a.categoryBar-list-link:hover:after {
 
 span.categoryBar-list-count {
   display: block !important;
-  color: #fff !important;
-  font-size: 20px !important;
+  color: #fff !important; /* 文章数量颜色改为白色 */
+  font-size: 20px !important; /* 增大文章数量字体大小 */
 }
 
 span.categoryBar-list-count::before {
@@ -81,8 +81,8 @@ span.categoryBar-list-count::before {
 span.categoryBar-list-descr {
   padding: 5px;
   display: block !important;
-  color: #fff !important;
-  font-size: 20px !important;
+  color: #fff !important; /* 描述颜色改为白色 */
+  font-size: 20px !important; /* 增大描述字体大小 */
   position: relative;
   right: -100%;
 }
@@ -92,5 +92,17 @@ span.categoryBar-list-descr {
     width: 48% !important;
     height: 150px !important;
     margin: 5px 1% 0 1% !important;
+  }
+
+  a.categoryBar-list-link {
+    font-size: 20px !important; /* 移动端分类名字体大小 */
+  }
+
+  span.categoryBar-list-count {
+    font-size: 18px !important; /* 移动端文章数量字体大小 */
+  }
+
+  span.categoryBar-list-descr {
+    font-size: 18px !important; /* 移动端描述字体大小 */
   }
 }
